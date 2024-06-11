@@ -1,13 +1,12 @@
-import random
-
-def add(num1, num2):
-    print(num1 + num2)
-def check_int(number):
-    try:
-        number = int(number)
-        return True
-    except ValueError:
-        return False
+import random #import in the random function
+def add(num1, num2): #define how to add two numbers 
+    print(num1 + num2) #Write the addition of these two numbers
+def check_int(number): # Define the final number and write a function under it to check if it will break my code
+    try: 
+        number = int(number) #check if the number is a integer
+        return True #if it is a integer, this is true
+    except ValueError: #if the value is not a integer, isolate the issue so it does not cause problems in the rest of the cpde
+        return False #because it us not a integer, this is false
 def get_int():
     while True:
         try:
